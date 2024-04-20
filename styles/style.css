@@ -4,7 +4,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #070A1A, #0C102B);
+    background: radial-gradient(circle, #070A1A, #171f53);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
