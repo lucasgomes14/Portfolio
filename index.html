@@ -4,108 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Gomes</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="main-w80">
         <header class="menu">
             <nav>
                 <ul>
-                    <li>Início</li>
-                    <li>Sobre mim</li>
-                    <li>Habilidades</li>
-                    <li>Contatos</li>
-                    <li>Projetos</li>
+                    <li><a href="#start">Início</a></li>
+                    <li><a href="#about-me">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#projects">Projetos</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
+        <main class="main" id="start">
             <img src="images/my-image.png" alt="My image">
             <div class="main-h1-button">
                 <h1>Lucas Gomes Desenvolvedor Web</h1>
-                <p><a href="#">Ver mais</a></p>
+                <p><a href="#about-me">Ver mais</a></p>
             </div>
         </main>
-        <div class="about-me">
-            <h2 class="titles">Sobre mim</h2>
+        <div class="about-me" id="about-me">
+            <h2 class="titles">Sobre Mim</h2>
             <p>Tenho 23 anos, estou no terceiro período de análise e desenvolvimento de sistemas. Estou atualmente em busca de adquirir experiência para atuar como desenvolvedor front-end. Meus estudos estão voltados a obter conhecimentos sólidos na base HTML5, CSS3 e Javascript para futuramente desenvolver no framework React.js.</p>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <h2 class="titles">Habilidades</h2>
             <section class="content-skills-card">
                 <div class="skills-card">
                     <h3 class="skills-title">HTML5</h3>
-                    <img src="images/html.png" alt="HTML5 icon" class="img-card">
+                    <img src="images/html.png" alt="HTML5 icon" class="img-card-skills html">
                 </div>
                 <div class="skills-card">
                     <h3 class="skills-title">CSS3</h3>
-                    <img src="images/css icon.png" alt="CSS3 icon" class="img-card">
+                    <img src="images/css icon.png" alt="CSS3 icon" class="img-card-skills  css">
                 </div>
                 <div class="skills-card">
                     <h3 class="skills-title">Javascript</h3>
-                    <img src="images/js.png" alt="Javascript icon" class="img-card">
+                    <img src="images/js.png" alt="Javascript icon" class="img-card-skills js">
                 </div>
                 <div class="skills-card">
                     <h3 class="skills-title">Java</h3>
-                    <img src="images/java.png" alt="Java icon" class="img-card">
+                    <img src="images/java.png" alt="Java icon" class="img-card-skills java">
                 </div>
                 <div class="skills-card">
                     <h3 class="skills-title">Python</h3>
-                    <img src="images/python icon.png" alt="python icon" class="img-card">
+                    <img src="images/python icon.png" alt="python icon" class="img-card-skills python">
                 </div>
             </section>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2 class="titles">Contatos</h2>
             <section class="content-contact-card">
-                <div class="contact-card">
+                <a href="mailto:lucazmatehus14@gmail.com" class="contact-card" target="_blank">
                     <div class="content-contact-image">
                         <img src="images/email.png" alt="E-mail icon">
                     </div>
-                    <h3 class="title-contact">E-mail</h3>
-                    <p><a href="mailto:lucazmatehus14@gmail.com">lucazmatehus14@gmail.com</a></p>
-                </div>
-                <div class="contact-card">
+                    <div class="contact-text">
+                        <h3 class="title-contact">E-mail</h3>
+                        <p class="paragraph-contact">lucazmatehus14@gmail.com</p>
+                    </div>
+                </a>
+                <a href="http://wa.me/558391546906" class="contact-card" target="_blank">
                     <div class="content-contact-image">
                         <img src="images/tele.png" alt="Telephone icon">
                     </div>
-                    <h3 class="title-contact">Telefone</h3>
-                    <p><a href="http://wa.me/558391546906">(83) 99154-6906</a></p>
-                </div>
-                <div class="contact-card">
+                    <div class="contact-text">
+                        <h3 class="title-contact">Telefone</h3>
+                        <p class="paragraph-contact">(83) 99154-6906</p>
+                    </div>
+                </a>
+                <a href="http://github.com/lucasgomes14" class="contact-card" target="_blank">
                     <div class="content-contact-image">
                         <img src="images/github.png" alt="Github icon">
                     </div>
-                    <h3 class="title-contact">Github</h3>
-                    <p><a href="http://github.com/lucasgomes14">github.com/lucasgomes14</a></p>
-                </div>
-                <div class="contact-card">
+                    <div class="contact-text">
+                        <h3 class="title-contact">Github</h3>
+                        <p class="paragraph-contact">github.com/lucasgomes14</p>
+                    </div>
+                </a>
+                <a href="http://linkedin.com/in/lucasgomes14/" class="contact-card" target="_blank">
                     <div class="content-contact-image">
                         <img src="images/linkedin.png" alt="LinkedIn icon">
                     </div>
-                    <h3 class="title-contact">LinkedIn</h3>
-                    <p><a href="http://linkedin.com/in/lucasgomes14/">linkedin.com/in/lucasgomes14/</a></p>
-                </div>
+                    <div class="contact-text">
+                        <h3 class="title-contact">LinkedIn</h3>
+                        <p class="paragraph-contact">linkedin.com/in/lucasgomes14/</p>
+                    </div>
+                </a>
             </section>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
+            <h2 class="titles">Projetos</h2>
             <section class="content-projects-card">
                 <div class="project-card">
-                    
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
                 <div class="project-card">
-
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
                 <div class="project-card">
-
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
                 <div class="project-card">
-                    
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
                 <div class="project-card">
-
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
                 <div class="project-card">
-
+                    <h3 class="loading">Em andamento</h3>
+                    <i class="fas fa-spinner fa-spin loading-icon"></i>
                 </div>
             </section>
         </div>
