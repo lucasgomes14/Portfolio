@@ -17,6 +17,7 @@ body {
 
 .main-w80 {
     width: 80%;
+    max-width: 1720px;
 }
 
 .menu {
@@ -26,6 +27,11 @@ body {
 .menu nav {
     width: 100%;
 }
+
+.menu-toggle {
+    display: none;
+}
+
 
 .menu ul {
     display: flex;
@@ -46,10 +52,12 @@ body {
     text-decoration: none;
     padding: 15px;
     color: #898EAE;
+    transition: transform .8s;
 }
 
 .menu li a:hover {
     border-bottom: solid 2px #898EAE;
+    transform: scale(1.1);
 }
 
 .menu li a:visited {
@@ -72,17 +80,22 @@ body {
 }
 
 .main img {
-    height: 20em;
+    height: 40em;
+    transition: transform .8s;
+}
+
+.main img:hover {
+    transform: scale(1.1);
 }
 
 .main-h1-button {
-    width: 400px;
+    width: 800px;
     text-align: right;
 }
 
 .main-h1-button h1 {
-    font-size: 1.7em;
-    margin: 0 0 15px 0;
+    font-size: 2.5em;
+    margin: 0 0 15px 50px;
     padding: 0;
 }
 
@@ -144,13 +157,15 @@ body {
     align-items: center;
     border-bottom: solid 2px #898EAE;
     transition: box-shadow .8s;
+    transition: transform .8s;
 }
 
 .skills-card:hover {
     box-shadow: 0px 0px 15px 2px #FFF4D9;
+    transform: scale(1.1);
 }
 
-.skills-card h3 {
+.skills-title {
     margin: 0;
     font-size: 20px;
     font-weight: 200;
@@ -196,11 +211,12 @@ body {
     color: #898EAE;
     border-radius: 25px;
     transition: box-shadow .7s;
+    transition: transform .7s;
 }
 
 .contact-card:hover {
     box-shadow: 0 4px 3px -2px #FFF4D9;
-
+    transform: scale(1.1);
 }
 
 .content-contact-image {
@@ -237,7 +253,7 @@ body {
 }
 
 .content-projects-card {
-    height: 600px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;/* mudar quando deixar responsivo */
@@ -275,4 +291,188 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 15px;
+}
+
+.initial-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #898eae8c;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.initial-back:active {
+    background-color: #c5ccf98c;
+}
+
+.initial-back i {
+    color: #171f53b4;
+}
+
+.initial-back:visited {
+    color: #898EAE;
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-w80 {
+        width: 90%;
+    }
+
+    .menu {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu nav { 
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-toggle {
+        width: 35px;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: solid 1px transparent;
+        color: #898EAE;
+    }
+
+    .menu-toggle:active {
+        color: #c5ccf9;
+    }
+
+    .main {
+        height: 600px;
+        justify-content: space-evenly;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main img {
+        height: 250px;
+    }
+
+    .main-h1-button {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-h1-button h1 {
+        text-align: center;
+        margin: 0 0 15px 0;
+        font-size: 25px;
+    }
+
+    .main-h1-button p a {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .titles {
+        font-size: 25px;
+        margin-top: 70px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .content-skills-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-card {
+        height: 120px;
+        width: 120px;
+    }
+
+    .skills-title {
+        font-size: 10px;
+    }
+
+    .html {
+        height: 70px;
+    }
+
+    .css {
+        height: 70px;
+    }
+
+    .js {
+        height: 50px;
+    }
+
+    .java {
+        height: 50px;
+    }
+
+    .python {
+        height: 40px;
+    }
+
+    .content-contact-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-projects-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .project-card {
+        width: 80%;
+        height: 200px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card:hover {
+        transform: scale(1.2);
+    }
+
+    .footer {
+        font-size: 10px;
+    }
 }
