@@ -361,8 +361,12 @@ body {
         color: #898EAE;
     }
 
-    .menu-toggle:active {
+    .menu-toggle:hover {
         color: #c5ccf9;
+    }
+    
+    .menu-toggle:active {
+        color: #c5ccf991;
     }
 
     .main {
